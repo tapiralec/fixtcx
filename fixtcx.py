@@ -1,7 +1,5 @@
 import xml.etree.ElementTree
 from sys import argv
-import fileinput
-
 
 def Process(fin):
     e = xml.etree.ElementTree.parse(fin)
@@ -21,10 +19,7 @@ def Process(fin):
                     print("removed zero-distance trackpoint")
     print("complete!")
 
-    
     e.write("output"+argv[1], encoding="UTF-8", xml_declaration=True)
-
 
 if __name__=="__main__":
     Process(argv[1])
-
