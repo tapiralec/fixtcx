@@ -4,4 +4,4 @@ removes zero distance trackpoints, which seem to be a source of issue for Strava
 
 use: python fixtcx.py <filename.tcx>
 
-creates a the file output<filename.tcx>
+creates the file output<filename.tcx>
